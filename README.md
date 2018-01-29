@@ -24,6 +24,12 @@ An example of running against all fits files in my xo-2b dir
 
 `lemon photometry /data/xo-2b.fits /data/xo-2b/*.fits phot.LEMONdB`
 
+### Create the differential photometry data
+
+This command will take data from the phot.LEMONdB and create a new database called curves.LEMONdB
+
+`lemon diffphot /data/phot.LEMONdB /data/curves.LEMONdB`
+
 ### Run the jucier browser app
 
 `lemon juicer phot.LEMONdB`
